@@ -14,7 +14,6 @@ public class Ejercicio5 {
             driver.manage().window().maximize();
             driver.get("https://demoqa.com/webtables");
 
-            // Configurar WebDriverWait (esperas explícitas obligatorias)[cite: 4]
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             WebElement addBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("addNewRecordButton")));
